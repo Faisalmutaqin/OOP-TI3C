@@ -1,4 +1,16 @@
-print("hello world!")
-print("apa kabar kalian")
-print("selamat bergabung di kelas oop python")
-print("semoga installasinya berhasil")
+class Hero:
+
+	def __init__(self, inputName, inputHealth, inputpower, inputArmor):
+		self.name = inputName
+		self.health = inputpower
+		self.power = inputpower
+		self.armor = inputArmor
+
+
+hero1 = Hero("sniper",100, 10, 4)
+hero2 = Hero("mirana",100, 15, 1)
+hero3 = Hero("ucup",1000, 100, 0)
+
+print(hero1.__dict__)
+print(hero2.__dict__)
+print(hero3.__dict__)
